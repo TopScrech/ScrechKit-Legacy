@@ -10,7 +10,7 @@ public extension View {
     }
 }
 
-@available(iOS 17, macOS 14, tvOS 14, watchOS 10, *)
+@available(iOS 17, macOS 14, tvOS 14, *)
 public extension View {
     func inspector <Content> (
         _ isPresented: Binding<Bool> = .constant(true),
