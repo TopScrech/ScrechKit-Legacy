@@ -1,7 +1,7 @@
 #if os(iOS) || os(tvOS)
 import SwiftUI
 
-@available(iOS 13.0, tvOS 13.0, *)
+@available(iOS 13, tvOS 13, *)
 public extension View {
     func asUIImage() -> UIImage {
         let controller = UIHostingController(rootView: self)

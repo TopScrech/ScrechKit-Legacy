@@ -1,6 +1,6 @@
 import SwiftUI
 
-@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+@available(iOS 13, macOS 10.15, tvOS 13, watchOS 6, *)
 public extension View {
     func largeTitle() -> some View {
         self.font(.largeTitle)
@@ -25,7 +25,7 @@ public extension View {
     }
 }
 
-@available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
+@available(iOS 14, macOS 11, tvOS 14, watchOS 7, *)
 public extension View {
     func title2() -> some View {
         self.font(.title2)
@@ -38,7 +38,7 @@ public extension View {
     }
 }
 
-@available(iOS 16.0, macOS 13.0, tvOS 16.0, watchOS 9.0, *)
+@available(iOS 16, macOS 13, tvOS 16, watchOS 9, *)
 public extension View {
     func largeTitle(_ weight: Font.Weight = .regular, design: Font.Design = .default) -> some View {
         self
@@ -91,7 +91,7 @@ public extension View {
     }
 }
 
-@available(iOS 14.0, macOS 11, tvOS 14.0, watchOS 7.0, *)
+@available(iOS 14, macOS 11, tvOS 14, watchOS 7, *)
 public extension Text {
     func sheetTitle() -> some View {
         self
