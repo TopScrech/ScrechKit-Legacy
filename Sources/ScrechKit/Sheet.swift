@@ -11,8 +11,8 @@ public extension View {
 }
 
 
-#if !os(watchOS)
-@available(iOS 17, macOS 14, tvOS 14, *)
+#if !os(watchOS) && !os(tvOS)
+@available(iOS 17, macOS 14, *)
 public extension View {
     func inspector <Content> (
         _ isPresented: Binding<Bool> = .constant(true),
