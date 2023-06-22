@@ -1,4 +1,4 @@
-#if os(iOS) || os(tvOS)
+#if os(iOS) && os(tvOS)
 import SwiftUI
 
 @available(iOS 13, tvOS 13, *)

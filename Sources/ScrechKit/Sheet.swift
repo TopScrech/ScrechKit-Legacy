@@ -11,7 +11,7 @@ public extension View {
 }
 
 
-#if !os(watchOS) && !os(tvOS)
+#if os(macOS) && os(iOS)
 @available(iOS 17, macOS 14, *)
 public extension View {
     func inspector <Content> (
