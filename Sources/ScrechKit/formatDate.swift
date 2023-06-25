@@ -1,5 +1,23 @@
 import Foundation
 
+public func timeSinceISO(_ date: String) -> LocalizedStringResource {
+    let formatter = ISO8601DateFormatter()
+    guard let date = formatter.date(from: date) else { return "-" }
+    
+    let sinceNowSeconds = Int(date.timeIntervalSinceNow * -1)
+    
+    guard sinceNowSeconds > 60 else { return "\(sinceNowSeconds) seconds ago" }
+    
+    let sinceNowMinutes = sinceNowSeconds / 60
+    guard sinceNowMinutes > 60 else { return "\(sinceNowMinutes) minutes ago" }
+    
+    let sinceNowHours = sinceNowMinutes / 60
+    guard sinceNowHours > 24 else { return "\(sinceNowHours) hours ago" }
+    
+    let sinceNowDays = sinceNowHours / 24
+    return "\(sinceNowDays) days ago"
+}
+
 public func formatDate(_ date: String) -> Date? {
     let formatter = DateFormatter()
     formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
