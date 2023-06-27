@@ -1,6 +1,6 @@
 import SwiftUI
 
-@available(iOS 14, macOS 11, tvOS 14, watchOS 7, *)
+@available(iOS 15, macOS 13, tvOS 15, watchOS 9, *)
 public struct MenuButton: View {
     private let name: LocalizedStringResource
     private let role: ButtonRole
