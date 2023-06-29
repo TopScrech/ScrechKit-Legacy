@@ -7,6 +7,8 @@ public func timeSinceISO(_ date: String) -> LocalizedStringResource {
     
     let sinceNowSeconds = Int(date.timeIntervalSinceNow * -1)
     
+    guard sinceNowSeconds > 1 else { return "Now" }
+    
     guard sinceNowSeconds > 60 else { return "\(sinceNowSeconds) seconds ago" }
     
     let sinceNowMinutes = sinceNowSeconds / 60
