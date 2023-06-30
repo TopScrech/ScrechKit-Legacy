@@ -90,14 +90,3 @@ public extension View {
             .font(.system(.caption2, design: design, weight: weight))
     }
 }
-
-@available(iOS 14, macOS 11, tvOS 14, watchOS 7, *)
-public extension Text {
-    func sheetTitle() -> some View {
-        self
-            .bold()
-            .title3()
-            .padding(.vertical, 20)
-            .foregroundColor(.primary)
-    }
-}

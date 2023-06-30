@@ -2,12 +2,13 @@ import SwiftUI
 
 @available(iOS 16, macOS 13, tvOS 16, watchOS 9, *)
 public struct ListButton: View {
-    private let name, icon, actionIcon: String
+    private let name: LocalizedStringResource
+    private let icon, actionIcon: String
     private let color: Color
     private let action: () -> Void
     
     public init(
-        _ name: String = "",
+        _ name: LocalizedStringResource,
         icon: String = "",
         actionIcon: String = "",
         color: Color = .blue,
